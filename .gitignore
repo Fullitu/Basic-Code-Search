@@ -1,0 +1,23 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Environment variables
+.env
+*.env
+
+# Editor files
+.vscode/
+.idea/
+
+# Qdrant persistence directory
+qdrant_data/
+
+# OS-specific
+.DS_Store
+Thumbs.db
