@@ -17,7 +17,7 @@ class DatabaseClient:
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE
         )
-        print("YES THIS IN NEW VERSION")
+
         # Wait for Qdrant to be ready
         start = time.time()
         while True:
@@ -38,7 +38,6 @@ class DatabaseClient:
             subprocess.run(["docker", "stop", "qdrant_db"])
             self.db_process.terminate()
             self.db_process.wait()
-            time.sleep(2)  # Give some time for the process to terminate
         else:
             raise RuntimeError("No active database process to terminate.")
 
