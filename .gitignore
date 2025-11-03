@@ -17,5 +17,5 @@ qdrant_data/
 # test file
 test.py
 
-# model checkpoints (too large for a commit)
-results
+# saved results (too large for commit)
+results/
