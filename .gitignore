@@ -11,15 +11,11 @@ ENV/
 .env
 *.env
 
-# Editor files
-.vscode/
-.idea/
-
 # Qdrant persistence directory
 qdrant_data/
 
-# OS-specific
-.DS_Store
-Thumbs.db
-
+# test file
 test.py
+
+# model checkpoints (too large for a commit)
+results

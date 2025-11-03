@@ -29,7 +29,7 @@ class DatabaseClient:
                 pass
 
             if time.time() - start > timeout:
-                raise TimeoutError("Timed out waiting for Qdrant to start.")
+                raise TimeoutError("Timed out waiting for Qdrant to start. Make sure Docker is running in the background.")
             time.sleep(1)
 
         
